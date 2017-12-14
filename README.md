@@ -31,6 +31,13 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 - 主旋律交替使用 Flute 和 Piano
 - 伴奏音量小于主旋律音量
 
+##2017.12.14 v0.14
+
+- 每两小节伴奏用不同节奏，同样根据种子生成
+- 伴奏前面铺一节再进主旋律
+- 中间和末尾加多音阶连弹点缀
+
+
 ##TODO：
 
 - 更丰富的节奏型
