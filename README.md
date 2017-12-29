@@ -16,7 +16,7 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 
 <details>
 
-<summary>折叠功能测试</summary>
+<summary>【点击查看 v0.1－v.0.14 开发记录】</summary>
 
 ### 2017.12.14 v0.11
 
@@ -47,6 +47,7 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 
 </details>
 
+
 0.1X 系列到此完结
 
 - [观看演示视频](http://www.bilibili.com/video/av17271600/)
@@ -55,13 +56,16 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 
 
 
-### 2017.12.18 v0.20
+### 2017.12.18
 
 通过哔站认识了 UP 主 [@yxlllc](http://space.bilibili.com/75304607) ，他开发过各种 Mathematica 编曲的工具，他提出的 SMSP（Standard Musical String Protocol）我非常喜欢，这是一种接近于简谱的纯文本编曲方式。我愿意基于 [@yxlllc](https://github.com/yxlllc) 的编译器 重构 AlphaChord 的代码，这将大大方便程序以后开发更复杂的功能。
 
 此后版本的 AlphaChord 依赖于 [@yxlllc](https://github.com/yxlllc) 的编译器
 
+### 2017.12.29 v0.2.0 beta
 
+- 功能和之前一样，只不过改成了基于 SMSP 编译器编程
+- 增加了常见和弦进行库
 
 
 
