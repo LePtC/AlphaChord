@@ -67,6 +67,24 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 - 功能和之前一样，只不过改成了基于 SMSP 编译器编程
 - 增加了常见和弦进行库
 
+### 2018.01.03
+
+接下来 AlphaChord 会进入各个独立模块的开发，例如钢琴轨由 AlphaTexture 模块计算多声部平稳进行的织体，提供节奏型库；AlphaBeat 负责打击乐、加花以及 bass 的配合；AlphaMain 负责从种子映射主旋律，判断哪些音符序列不合理，给拉回来或插值，并在乐曲相应阶段应用一定套路；最后 AlphaChord 主程序直接接收曲子 AB 段钦定的和弦进行和主旋律种子，然后自动重复两遍（两遍用不一样的渲染模式）按照流行音乐的标准格式出歌。
+
+相关编曲知识见 [B站首个从零开始的完整的编曲教程『共123P更新完毕』](http://www.bilibili.com/video/av9719573/)（我接下来就是要把视频中的所有编曲技法教给 AlphaChord ：）
+
+### 2018.01.04
+
+- AlphaTexture 完成和弦表的制作
+
+### 2018.01.05
+
+- AlphaTexture v0.1 能够决策出不串声部的平稳进行
+
+
+
+
+
 
 
 ### TODO：
