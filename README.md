@@ -86,6 +86,10 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 - AlphaTexture v0.2 能够决策出串声部的较平稳进行
 - 输出织体谱子到 SMSP，织体模块封装，按教程开发了 6 种节奏型的库
 
+- AlphaBeat v0.1 提供 Drum、Hat、Tom 套件，开发了一个普通加花节奏型
+- AlphaBeat v0.1 复制 AlphaTexture 的和弦表来制作 bass
+
+
 
 
 
