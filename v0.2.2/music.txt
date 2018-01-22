@@ -1,0 +1,102 @@
+<<chords.txt
+m[4, 120, 0]
+
+[P] i[Midi[Piano]] v[1]
+[P] (0)
+^1---|^1---|^1---|^1---|
+^1---|5---|4---|6---|
+^C>s---|G>s---|F>s---|Am>s---|
+^C>s s s s|G>s s s s|F>s s s s|Am>s s s s|
+^C>s s_ s_ u s|G>s s_ s_ u s|F>s s_ s_ s_ s_ u|Am>s s_ s_ s ab|
+
+% 此为 v0.1 代的 AlphaChord 水平
+
+^C>s s_ s_ u s|G>s s_ s_ u s|F>s s_ s_ s_ s_ u|Am>s s_ s_ s ab|
+[vio] i[Midi[Violin,-24]] v[.3]
+[vio] (20,44,48) ^C>a---|G>a---|F>a---|Am>a---|
+
+
+% AlphaTexture
+
+[left] i[Midi[Piano,-12]] v[1]
+[righ] i[Midi[Piano]] v[.8]
+Fast1{r= 0= r= 0= r= 0= r= 0= r= 0= r= 0= r= 0= r= 0=}
+Pi[no]
+{
+  [left] (no) <12,16,19> sa 0_ sb 0_ sa| <7,11,14> sa 0_ sb 0_ sa| <5,9,12> sb 0_ sa 0_ sa| <9,12,16> sa 0_ sb 0_ sa|
+  [righ] (no) <12,16,19,23,26> Fast1 | <7,11,14,18,21> Fast1 | <5,9,12,16,19> Fast1 | <9,12,16,19,23> Fast1 |
+}
+Pi[24]
+
+
+% AlphaBeat
+
+[left] i[Midi[Piano,-12]] v[.5]
+[righ] i[Midi[Piano]] v[.4]
+Pi[28]
+<<beats.txt
+Be[no]
+{
+  [drum] i[Midi[]] v[.5]
+  [hat] i[Midi[]] v[.3]
+  [drum] (no) M_ 0= M= S_ M_ 0= S= M_ S_ M_ |M_ 0= M= S_ M_ 0= S= M_ S= S= M= S=|M_ 0= M= S_ M_ 0= S= M_ S_ M_ |M_ 0= M= S_ M_ 0= S= M_ S= S= M= S=|
+  [hat] (no) T= 0= T= T= To T= 0= T= T= To |T= 0= T= T= To T= 0= T= T= To |T= 0= T= T= To T= 0= T= T= To |T= 0= T= T= To T= 0= T= T= To |
+}
+Be[28]
+
+
+% 底鼓复制到 Bass
+
+Pi[32]
+Be[32]
+[bass] i[Midi[Bass,-24]] v[1]
+Ba[no]
+{
+  [bass] (no) <12,16,19,23,26> a_= 0= a_ c_= 0= c_ c= b= a_| <7,11,14,18,21> a_= 0= a_ c_= 0= c_ c= b= a_| <5,9,12,16,19> c_= 0= c_ ^a_= 0= ^a_ ^a| <9,12,16,19,23> ^a_= 0= ^a_ c_= 0= c_ ^a|
+}
+Ba[32]
+
+
+% 进主旋律，升高右手钢琴把声部让出来
+
+[left] i[Midi[Piano,-12]] v[.8]
+[righ] i[Midi[Piano,12]] v[.5]
+Fast2{r= 0= b= 0= r= 0= a= 0= r= 0= b= 0= r= 0= a= 0=}
+PiH[no]
+{
+  [left] (no) <12,16,19> sa 0_ sb 0_ sa| <7,11,14> sa 0_ sb 0_ sa| <5,9,12> sb 0_ sa 0_ sa| <9,12,16> sa 0_ sb 0_ sa|
+  [righ] (no) <12,16,19,23,26> Fast2 | <7,11,14,18,21> Fast2 | <5,9,12,16,19> Fast2 | <9,12,16,19,23> Fast2 |
+}
+PiH[36]
+
+Be[36]
+[bass] i[Midi[Bass,-24]] v[.5]
+Ba[36]
+% 主旋律第一段（前三句一样第四句不一样）
+[flute] i[Midi[Flute]] v[1]
+[flute] (35,35+8) <12,16,19,23,26> 0-- a_ b_ |c-- <7,11,14,18,21> a_ b_ |c-- !c_ <5,9,12,16,19> a_ |c-- <9,12,16,19,23> #c c. #c= c=  ##b b |
+
+
+Pi[40]
+Be[40]
+Ba[40]
+% 主旋律第二段（前两句一样后两句不一样）
+[flute] (40,48) <12,16,19,23,26> c_ 0_ c b c| <7,11,14,18,21> c_ 0_ c b c| <5,9,12,16,19> c_ ##c_ c_ b_ c ##c | <9,12,16,19,23> c- ##b b_
+
+
+% 喜闻乐见的琶音点缀
+Pa[no]
+{
+  [righ] (no) <12,16,19,23,26> a= b= c= ^a= ^b= ^c= ^^a= ^^b= ^^c= ^^a= ^^b= ^c= ^^a= ^b= ^c= ^a= <7,11,14,18,21> a= b= c= ^a= ^b= ^c= ^^a= ^^b= ^^c= ^^a= ^^b= ^c= ^^a= ^b= ^c= ^a= <5,9,12,16,19> a= b= c= ^a= ^b= ^c= ^^a= ^^b= ^^c= ^^a= ^^b= ^c= ^^a= ^b= ^c= ^a= <9,12,16,19,23> a= b= c= ^a= ^b= ^c= ^^a= ^^b= ^^c= ^^a= ^^b= ^c= ^^a= ^b= ^c= ^a=
+}
+[righ] i[Midi[Piano]] v[.8]
+Pa[44,48]
+Be[44,48]
+Ba[44,48]
+% 主旋律换钢琴演奏
+[left] i[Midi[Piano]] v[1]
+[left] (35+8) <12,16,19,23,26> 0-- a_ b_ |c-- <7,11,14,18,21> a_ b_ |c-- !c_ <5,9,12,16,19> a_ |c-- <9,12,16,19,23> #c c. #c= c=  ##b b |
+[left] (48) <12,16,19,23,26> c_ 0_ c b c| <7,11,14,18,21> c_ 0_ c b c| <5,9,12,16,19> c_ ##c_ c_ b_ c ##c | <9,12,16,19,23> c- ##b b_
+
+
+
