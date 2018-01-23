@@ -112,7 +112,7 @@ AlphaChord is a Mathematica program that generate chord music from irrational nu
 
 
 - [下载模块介绍曲 midi](https://github.com/LePtC/AlphaChord/raw/master/v0.2.2/music.mid)
-- [观看回文曲演示视频](http://www.bilibili.com/video/av?/)
+- [观看回文曲演示视频](http://www.bilibili.com/video/av18623766/)
 
 
 
