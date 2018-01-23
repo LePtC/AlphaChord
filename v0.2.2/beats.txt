@@ -1,0 +1,17 @@
+﻿% 底鼓
+M{BassDrum2}
+% 军鼓
+S{Snare}
+
+% 闭镲
+T{HiHatClosed}
+% 开镲
+To{HiHatOpen}
+% 吊镲
+Tc{CrashCymbal}
+
+% 嗵嗵鼓
+lT{LowTom}
+mT{MidTom}
+nT{MidTom2}
+hT{HighTom}
